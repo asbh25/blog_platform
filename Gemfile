@@ -45,3 +45,9 @@ gem "devise", "~> 4.9"
 
 # Access rights for users
 gem 'pundit', '~> 2.1.0'
+
+# Blueprinter is a JSON Object Presenter for Ruby
+gem 'blueprinter', '~> 0.25.3'
+
+# Pagination
+gem 'kaminari', '~> 1.2', '>= 1.2.2'

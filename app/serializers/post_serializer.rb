@@ -21,7 +21,7 @@ class PostSerializer < Blueprinter::Base
     post.created_at.iso8601
   end
 
-  field :user_nickname do |post, options|
+  field :user_nickname do |post, _options|
     post.user.nickname
   end
 end

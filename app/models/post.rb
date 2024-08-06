@@ -18,7 +18,7 @@ class Post < ApplicationRecord
   validates :title, presence: true, length: { maximum: 20 }
   validates :text, presence: true, length: { maximum: 150 }
 
-  scope :filter_by_user, ->(user_id) { where(user_id: user_id) if user_id.present? }
+  scope :filter_by_user, ->(user_id) { where(user_id:) if user_id.present? }
 
   def self.filter(params)
     posts = all

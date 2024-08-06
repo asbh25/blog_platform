@@ -2,7 +2,6 @@
 
 module Posts
   class List < ::PaginatedList
-
     def self.call(params)
       new(params).call
     end

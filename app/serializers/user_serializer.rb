@@ -22,10 +22,8 @@
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 
-require 'test_helper'
+class UserSerializer < Blueprinter::Base
+  identifier :id
 
-class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  fields :email, :nickname, :created_at
 end

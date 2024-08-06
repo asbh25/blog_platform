@@ -3,7 +3,6 @@
 module Api
   module V1
     class PostsController < BaseController
-
       def index
         authorize Post
 
@@ -43,7 +42,6 @@ module Api
       def post_params
         params.require(:post).permit(:title, :text)
       end
-
     end
   end
 end

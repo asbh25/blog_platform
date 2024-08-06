@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class PaginatedList
-
   def initialize(page: 1, per_page: nil)
     @page_number = page.to_i
     @per_page = (per_page || resources.model.default_per_page).to_i
